@@ -1,0 +1,140 @@
+.activities-timeline {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.activity-row {
+  display: flex;
+  gap: 0;
+  min-height: 80px;
+}
+
+.activity-time-col {
+  width: 80px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 16px;
+  padding-top: 8px;
+}
+
+.activity-date-text {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.activity-time-text {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.activity-line-col {
+  width: 40px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.activity-dot-lg {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.activity-dot-lg.gold { background: rgba(212, 168, 83, 0.2); color: var(--accent-gold); }
+.activity-dot-lg.blue { background: rgba(91, 156, 245, 0.2); color: var(--accent-blue); }
+.activity-dot-lg.emerald { background: rgba(78, 203, 141, 0.2); color: var(--accent-emerald); }
+.activity-dot-lg.violet { background: rgba(167, 139, 250, 0.2); color: var(--accent-violet); }
+.activity-dot-lg.orange { background: rgba(245, 166, 35, 0.2); color: var(--accent-orange); }
+.activity-dot-lg.rose { background: rgba(240, 112, 136, 0.2); color: var(--accent-rose); }
+
+.activity-connector {
+  width: 1px;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 4px 0;
+}
+
+.activity-content-col {
+  flex: 1;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  min-width: 0;
+}
+
+.activity-card {
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.activity-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.activity-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.activity-type-badge {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.activity-type-badge.gold { background: rgba(212, 168, 83, 0.15); color: var(--accent-gold); }
+.activity-type-badge.blue { background: rgba(91, 156, 245, 0.15); color: var(--accent-blue); }
+.activity-type-badge.emerald { background: rgba(78, 203, 141, 0.15); color: var(--accent-emerald); }
+.activity-type-badge.violet { background: rgba(167, 139, 250, 0.15); color: var(--accent-violet); }
+.activity-type-badge.orange { background: rgba(245, 166, 35, 0.15); color: var(--accent-orange); }
+
+.activity-card-user {
+  font-size: 12px;
+  color: var(--accent-gold);
+  font-weight: 500;
+}
+
+.activity-card-action {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.activity-card-footer {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.activity-card-entity {
+  color: var(--accent-blue-light);
+  font-weight: 500;
+}
+
+.activity-card-client {
+  color: var(--text-muted);
+}

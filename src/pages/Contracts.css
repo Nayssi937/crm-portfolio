@@ -1,0 +1,263 @@
+/* Contract detail layout */
+.contract-detail-layout,
+.client-detail-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+}
+
+.contract-detail-main,
+.client-detail-main {
+  padding: 28px;
+}
+
+.contract-detail-side,
+.client-detail-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contract-detail-header,
+.client-detail-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contract-id {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.contract-visit {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+.client-detail-header {
+  gap: 16px;
+}
+
+.client-detail-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(212, 168, 83, 0.25), rgba(212, 168, 83, 0.1));
+  color: var(--accent-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  flex-shrink: 0;
+}
+
+.client-detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.client-detail-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+/* Payment section */
+.section-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 14px;
+}
+
+.payment-bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.payment-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.payment-progress {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--accent-emerald), #6ee7b7);
+  transition: width 1s ease;
+}
+
+.payment-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.payment-info strong {
+  color: var(--text-primary);
+}
+
+/* Mini payment bar in table */
+.payment-mini {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.payment-mini-bar {
+  width: 50px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.payment-mini-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: var(--accent-emerald);
+}
+
+.payment-mini-pct {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* Side card */
+.side-card-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 16px;
+}
+
+.linked-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.linked-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.linked-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Activity log */
+.contract-activity-log {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+
+.contract-activity-log::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.activity-log-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 10px 0;
+  position: relative;
+}
+
+.activity-log-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  border: 2px solid rgba(20, 20, 40, 0.9);
+  flex-shrink: 0;
+  margin-top: 2px;
+  z-index: 1;
+}
+
+.activity-log-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.activity-log-action {
+  font-size: 13px;
+  color: var(--text-primary);
+  font-weight: 450;
+}
+
+.activity-log-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* Finance summary */
+.finance-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.finance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.finance-label {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.finance-value {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.finance-value.gold {
+  color: var(--accent-gold);
+}
+
+@media (max-width: 1200px) {
+  .contract-detail-layout,
+  .client-detail-layout {
+    grid-template-columns: 1fr;
+  }
+}
